@@ -1,11 +1,15 @@
-import HTML from "../assets/html.png";
-import CSS from "../assets/css.png";
-import JavaScript from "../assets/javascript.png";
-import ReactImg from "../assets/react.png";
-import Node from "../assets/node.png";
-import GitHub from "../assets/github.png";
-import Tailwind from "../assets/tailwind.png";
-import TypeScript from "../assets/typescript.png";
+import HTML from "../assets/skills/html.png";
+import CSS from "../assets/skills/css.png";
+import JavaScript from "../assets/skills/javascript.png";
+import ReactImg from "../assets/skills/react.png";
+import Node from "../assets/skills/node.png";
+import GitHub from "../assets/skills/github.png";
+import Tailwind from "../assets/skills/tailwind.png";
+import TypeScript from "../assets/skills/typescript.png";
+import Vite from "../assets/skills/vite.png";
+import Jest from "../assets/skills/jest.png";
+import Bootstrap from "../assets/skills/bootstrap.png";
+import Figma from "../assets/skills/figma.png";
 
 const Skills = () => {
   return (
@@ -32,24 +36,40 @@ const Skills = () => {
             <p className="my-4">JAVASCRIPT</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={ReactImg} alt="HTML icon" />
-            <p className="my-4">REACT</p>
+            <img className="w-20 mx-auto" src={TypeScript} alt="HTML icon" />
+            <p className="my-4">TYPESCRIPT</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={GitHub} alt="HTML icon" />
-            <p className="my-4">GITHUB</p>
+            <img className="w-20 mx-auto" src={ReactImg} alt="HTML icon" />
+            <p className="my-4">REACT</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Node} alt="HTML icon" />
             <p className="my-4">NODE JS</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={TypeScript} alt="HTML icon" />
-            <p className="my-4">TYPESCRIPT</p>
+            <img className="w-20 mx-auto" src={GitHub} alt="HTML icon" />
+            <p className="my-4">GITHUB</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Vite} alt="HTML icon" />
+            <p className="my-4">VITE</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Tailwind} alt="HTML icon" />
             <p className="my-4">TAILWIND</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Bootstrap} alt="HTML icon" />
+            <p className="my-4">BOOTSTRAP</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Jest} alt="HTML icon" />
+            <p className="my-4">JEST</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Figma} alt="HTML icon" />
+            <p className="my-4">FIGMA</p>
           </div>
         </div>
       </div>

@@ -19,9 +19,7 @@ const About = () => {
               As a skilled software developer proficient in TypeScript and
               JavaScript, with a solid understanding of frameworks such as React
               and Node.js, I specialize in swiftly adapting to new technologies
-              to craft efficient, scalable, and user-friendly solutions. Let's
-              collaborate to bring your ideas to life with precision and
-              elegance!
+              to craft efficient, scalable, and user-friendly solutions.
             </p>
           </div>
         </div>
