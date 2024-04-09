@@ -6,7 +6,7 @@ const Work = () => {
   return (
     <div
       name="work"
-      className="w-full min-h-screen py-2 md:h-screen text-gray-300 bg-[#0a192f]"
+      className="w-full min-h-screen h-full py-2  text-gray-300 bg-[#0a192f]"
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -25,7 +25,7 @@ const Work = () => {
               flex justify-center text-center items-center mx-auto content-div "
             >
               <div className="opacity-0 group-hover:opacity-100 duration-500">
-                <span className="text-2xl font bold text-white tracking-wider ">
+                <span className="text-2xl font bold  tracking-wider ">
                   {item.name}
                 </span>
                 <div className="pt-8 text-center ">
@@ -33,7 +33,7 @@ const Work = () => {
                   <a href={item.github} target="_blank">
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
+                       bg-white text-gray-700 font-bold text-lg "
                     >
                       Code
                     </button>
