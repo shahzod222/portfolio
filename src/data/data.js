@@ -3,7 +3,7 @@ import RSLang from "../assets/projects/rslang.jpg";
 import Shelter from "../assets/projects/shelter.jpg";
 import UnsplashApp from "../assets/projects/unsplashapp.jpg";
 
-export const data = [
+export const projects = [
   {
     id: 1,
     name: "GraphiQL App",
@@ -32,5 +32,44 @@ export const data = [
     image: UnsplashApp,
     github: "https://github.com/shahzod222/RSS-REACT2023Q4/tree/react.redux",
     live: "https://react-unspashapi.netlify.app/page/1",
+  },
+];
+
+export const timelineElements = [
+  {
+    id: 1,
+    title: "JavaScript Apprenticeship",
+    location: "The Rolling Scopes School",
+    description:
+      "Learned the basics of Frontend Development: HTML, CSS, JavaScript. Created numerous small single page applications. Got acquired with tools such as Webpack, npm, Scrum and more.",
+    date: "December 2021 - October 2022",
+    icon: "rss",
+  },
+  {
+    id: 2,
+    title: "React.JS Apprenticeship",
+    location: "The Rolling Scopes School",
+    description:
+      "Learned fundamental as well as advanced technologies of React.JS. Created many interactive applications utilizing Next.JS, Redux, TypeScript, GraphQL. Mastered skills of team-work by doing task with 2 teammates.",
+    date: "October 2023 - January 2024",
+    icon: "rss",
+  },
+  {
+    id: 3,
+    title: "Frontend Bootcamp",
+    location: "DSR Corporation",
+    description:
+      "Received personalized mentorship and successfully completed all assignments by developing websites. Acquired and used technologies including React.JS, JavaScript, TypeScript, and other related tools.",
+    date: "October 2023 - February 2024",
+    icon: "dsr",
+  },
+  {
+    id: 4,
+    title: "Frontend Mentor",
+    location: "The Rolling Scopes School",
+    description:
+      "As a mentor, I check my students' work, asssit when they encounter obstacles and ensure their understanding and growth in front-end development through active mentorship and problem-solving",
+    date: "January 2024 - present",
+    icon: "rss",
   },
 ];

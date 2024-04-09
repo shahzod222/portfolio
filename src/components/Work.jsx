@@ -1,14 +1,12 @@
-import { data } from "../data/data.js";
+import { projects } from "../data/data.js";
 import { FaCode } from "react-icons/fa";
 import { BsBrowserChrome } from "react-icons/bs";
 
 const Work = () => {
-  const project = data;
-
   return (
     <div
       name="work"
-      className="w-full min-h-screen h-full py-2  text-gray-300 bg-[#0a192f] pt-[80px]"
+      className="flex justify-center items-center w-full min-h-screen h-full text-gray-300 bg-[#0a192f] pt-[80px]"
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -19,7 +17,7 @@ const Work = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4">
-          {project.map((item, index) => (
+          {projects.map((item, index) => (
             <div
               key={index}
               className="shadow-lg shadow-[#040c16] group container rounded-md 
