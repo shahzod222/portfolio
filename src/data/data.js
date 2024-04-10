@@ -9,14 +9,14 @@ export const projects = [
     name: "GraphiQL App",
     image: GraphiQl,
     github: "https://github.com/shahzod222/graphiql-app",
-    live: "graphiql-qibray.netlify.app/",
+    live: "https://graphiql-qibray.netlify.app/",
   },
   {
     id: 2,
     name: "RS Lang App",
     image: RSLang,
     github: "https://github.com/shahzod222/rslang",
-    live: "app-rs-lang.netlify.app/",
+    live: "https://app-rs-lang.netlify.app/",
   },
   {
     id: 3,
