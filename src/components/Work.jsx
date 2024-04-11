@@ -6,7 +6,7 @@ const Work = () => {
   return (
     <div
       name="work"
-      className="flex justify-center items-center w-full min-h-screen h-full text-gray-300 bg-[#0a192f]"
+      className="flex flex-col justify-center items-center w-full min-h-screen h-full text-gray-300 bg-[#0a192f]"
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -26,6 +26,7 @@ const Work = () => {
               <img
                 className="w-full h-full group-hover:blur-sm duration-200 rounded-md"
                 src={item.image}
+                style={{ backgroundImage: "cover" }}
               />
               <div className="absolute z-2 opacity-0 group-hover:opacity-100 duration-500">
                 <span className="text-2xl font bold tracking-wider ">
@@ -58,6 +59,16 @@ const Work = () => {
           ))}
         </div>
       </div>
+      <button className="text-white group border-2 px-6 py-3 my-4 flex items-center hover:bg-pink-600 hover:border-pink-600">
+        <span>
+          <a
+            href="https://github.com/shahzod222?tab=repositories"
+            target="_blank"
+          >
+            Check out more projects
+          </a>
+        </span>
+      </button>
     </div>
   );
 };
