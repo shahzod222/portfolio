@@ -18,9 +18,10 @@ function App() {
 
   return (
     <div
-      className={`bg-${isDark ? "[#0a192f]" : "gray-300"} text-${
-        !isDark ? "[#0a192f]" : "gray-300"
-      }`}
+      style={{
+        background: `${isDark ? "#0a192f" : "white"}`,
+        color: `${isDark ? "rgb(209 213 219)" : "black"}`,
+      }}
     >
       <Navbar isDark={isDark} setIsDark={setIsDark} />
       <Home isDark={isDark} />

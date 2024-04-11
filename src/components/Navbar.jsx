@@ -20,6 +20,10 @@ const Navbar = ({ isDark, setIsDark }) => {
     localStorage.setItem("isDark", `${!isDark}`);
     setIsDark(!isDark);
   };
+  const handleBurgerTheme = () => {
+    handleTheme();
+    handleClick();
+  };
 
   return (
     <div
@@ -74,12 +78,11 @@ const Navbar = ({ isDark, setIsDark }) => {
         className={
           !nav
             ? "hidden"
-            : `z-2 absolute top-0 left-0 w-full h-screen bg-${
-                isDark ? "[#0a192f]" : "white"
-              } flex flex-col justify-center items-center`
+            : `z-9 absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center`
         }
+        style={{ background: `${isDark ? "#0a192f" : "white"}` }}
       >
-        <li onClick={handleTheme}>
+        <li onClick={handleBurgerTheme}>
           {isDark ? <MdLightMode size={45} /> : <MdDarkMode size={45} />}
         </li>
         <li className="py-6 text-4xl">
