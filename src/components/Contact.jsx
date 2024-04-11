@@ -19,7 +19,7 @@ const telegram_bot_id = "7123567208:AAEYTUcKL_LeDRhy4jok_gWgAHfekdeNnr4";
 const chat_id = 720043134;
 
 const Contact = () => {
-  const { isDark } = useAppContext();
+  const { isDark, t } = useAppContext();
   const {
     register,
     handleSubmit,
@@ -58,12 +58,10 @@ const Contact = () => {
       >
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-pink-600">
-            Contact
+            {t("contact.intro")}
           </p>
-          <p className="py-4">
-            // Submit the form below or shoot me an email -
-            shahzodubaydullaev2206@gmail.com
-          </p>
+          <p className="pt-4">{t("contact.title")}</p>
+          <p className="pb-4">{t("contact.email")}</p>
         </div>
         <input
           className="my-2 p-2"
@@ -72,7 +70,7 @@ const Contact = () => {
             color: "black",
           }}
           type="text"
-          placeholder="Name"
+          placeholder={t("contact.form-name")}
           {...register("name")}
         />
         {errors.name && (
@@ -102,7 +100,7 @@ const Contact = () => {
             color: "black",
           }}
           rows="10"
-          placeholder="Message"
+          placeholder={t("contact.form-message")}
           {...register("message")}
         ></textarea>
         {errors.message && (
@@ -111,7 +109,7 @@ const Contact = () => {
           </div>
         )}
         <CustomButton type="outline" formButton={true}>
-          {!isSubmitting ? "Let's Collaborate" : "Loading..."}
+          {!isSubmitting ? t("contact.button") : t("contact.button-loading")}
         </CustomButton>
       </form>
 

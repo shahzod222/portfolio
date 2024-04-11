@@ -8,14 +8,14 @@ import { useAppContext } from "../utils/AppContext";
 import CustomContainer from "../utils/CustomContainer";
 
 const Experience = () => {
-  const { isDark } = useAppContext();
+  const { isDark, t, lang } = useAppContext();
   return (
     <CustomContainer name="experience">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 ">
           <div className="sm:text-right pb-8 pl-4">
             <p className="text-4xl font-bold inline border-b-4 border-pink-600">
-              Experience
+              {t("experience.intro")}
             </p>
           </div>
           <div></div>
@@ -26,7 +26,7 @@ const Experience = () => {
             return (
               <VerticalTimelineElement
                 key={element.id}
-                date={element.date}
+                date={element.date[lang]}
                 dateClassName={`${isDark ? "text-white" : "text-black"}`}
                 icon={
                   <img
@@ -45,12 +45,12 @@ const Experience = () => {
                 }}
               >
                 <h3 className="vertical-timeline-element-title font-bold text-2xl">
-                  {element.title}
+                  {element.title[lang]}
                 </h3>
                 <h4 className="vertical-timeline-element-subtitle">
                   {element.location}
                 </h4>
-                <p id="description">{element.description}</p>
+                <p id="description">{element.description[lang]}</p>
               </VerticalTimelineElement>
             );
           })}

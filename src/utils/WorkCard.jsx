@@ -5,7 +5,7 @@ import CustomButton from "../utils/CustomButton";
 import { useAppContext } from "./AppContext";
 
 const WorkCard = ({ item }) => {
-  const { isDark } = useAppContext();
+  const { isDark, t } = useAppContext();
   return (
     <div
       className={`hover:scale-105 group container rounded-md
@@ -25,7 +25,7 @@ const WorkCard = ({ item }) => {
         <div className="pt-8 text-center flex justify-center items-center ">
           <a href={item.github} target="_blank" className="mx-2">
             <CustomButton type="fill">
-              Code
+              {t("work.button-code")}
               <span>
                 <FaCode className="ml-3" />
               </span>
@@ -33,7 +33,7 @@ const WorkCard = ({ item }) => {
           </a>
           <a href={item.live} target="_blank" className="mx-2">
             <CustomButton type="fill">
-              Website
+              {t("work.button-website")}
               <span>
                 <BsBrowserChrome className="ml-3 " />
               </span>
