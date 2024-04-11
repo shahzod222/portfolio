@@ -15,7 +15,7 @@ const schema = z.object({
 const telegram_bot_id = "7123567208:AAEYTUcKL_LeDRhy4jok_gWgAHfekdeNnr4";
 const chat_id = 720043134;
 
-const Contact = () => {
+const Contact = ({ isDark }) => {
   const {
     register,
     handleSubmit,
@@ -49,7 +49,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full min-h-screen h-full bg-[#0a192f] flex justify-center items-center p-4"
+      className="w-full min-h-screen h-full flex justify-center items-center p-4"
     >
       <form
         method="POST"
@@ -57,16 +57,20 @@ const Contact = () => {
         onSubmit={handleSubmit(onSubmit)}
       >
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
+          <p className="text-4xl font-bold inline border-b-4 border-pink-600">
             Contact
           </p>
-          <p className="text-gray-300 py-4">
+          <p className="py-4">
             // Submit the form below or shoot me an email -
             shahzodubaydullaev2206@gmail.com
           </p>
         </div>
         <input
-          className="bg-[#ccd6f6] my-2 p-2"
+          className="my-2 p-2"
+          style={{
+            background: `${isDark ? "#ccd6f6" : "rgb(209 213 219)"}`,
+            color: "black",
+          }}
           type="text"
           placeholder="Name"
           {...register("name")}
@@ -77,7 +81,11 @@ const Contact = () => {
           </div>
         )}
         <input
-          className="my-2 p-2 bg-[#ccd6f6]"
+          className="my-2 p-2"
+          style={{
+            background: `${isDark ? "#ccd6f6" : "rgb(209 213 219)"}`,
+            color: "black",
+          }}
           type="email"
           placeholder="Email"
           {...register("email")}
@@ -88,7 +96,11 @@ const Contact = () => {
           </div>
         )}
         <textarea
-          className="bg-[#ccd6f6] my-2 p-2"
+          className="my-2 p-2"
+          style={{
+            background: `${isDark ? "#ccd6f6" : "rgb(209 213 219)"}`,
+            color: "black",
+          }}
           rows="10"
           placeholder="Message"
           {...register("message")}
@@ -101,7 +113,9 @@ const Contact = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center"
+          className={`${
+            !isDark && "border-black"
+          } hover:text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center`}
         >
           {!isSubmitting ? "Let's Collaborate" : "Loading..."}
         </button>
