@@ -30,10 +30,10 @@ const Navbar = ({ isDark, setIsDark }) => {
         <img src={Logo} alt="Logo" style={{ width: "200px" }} />
       </div>
       <div className="flex justify-center items-center">
-        <div onClick={handleTheme} className="px-4 cursor-pointer">
-          {isDark ? <MdLightMode size={30} /> : <MdDarkMode size={30} />}
-        </div>
-        <ul className="hidden md:flex">
+        <ul className="hidden md:flex justify-center items-center">
+          <li onClick={handleTheme}>
+            {isDark ? <MdLightMode size={30} /> : <MdDarkMode size={30} />}
+          </li>
           <li>
             <Link to="home" smooth={true} duration={500}>
               Home
@@ -74,9 +74,14 @@ const Navbar = ({ isDark, setIsDark }) => {
         className={
           !nav
             ? "hidden"
-            : " z-2 absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : `z-2 absolute top-0 left-0 w-full h-screen bg-${
+                isDark ? "[#0a192f]" : "white"
+              } flex flex-col justify-center items-center`
         }
       >
+        <li onClick={handleTheme}>
+          {isDark ? <MdLightMode size={45} /> : <MdDarkMode size={45} />}
+        </li>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home
