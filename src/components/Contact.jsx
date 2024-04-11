@@ -110,7 +110,7 @@ const Contact = () => {
             {errors.message.message}
           </div>
         )}
-        <CustomButton type="outline">
+        <CustomButton type="outline" formButton={true}>
           {!isSubmitting ? "Let's Collaborate" : "Loading..."}
         </CustomButton>
       </form>
