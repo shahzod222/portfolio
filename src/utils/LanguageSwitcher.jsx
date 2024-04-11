@@ -7,7 +7,9 @@ export default function Example() {
   const { setLang } = useAppContext();
 
   const handleChange = () => {
-    setLang(enabled ? "ru" : "en");
+    const lang = enabled ? "ru" : "en";
+    setLang(lang);
+    localStorage.setItem("lang", lang);
     setEnabled(!enabled);
   };
 
