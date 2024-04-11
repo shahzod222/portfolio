@@ -13,7 +13,7 @@ function App() {
   return (
     <div
       style={{
-        background: `${isDark ? "#0a192f" : "white"}`,
+        background: `${isDark ? "#0a192f" : "#ebebeb"}`,
         color: `${isDark ? "rgb(209 213 219)" : "black"}`,
       }}
     >

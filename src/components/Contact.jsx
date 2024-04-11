@@ -3,6 +3,8 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useAppContext } from "../utils/AppContext";
+import CustomButton from "../utils/CustomButton";
+import CustomContainer from "../utils/CustomContainer";
 
 const schema = z.object({
   name: z
@@ -49,10 +51,7 @@ const Contact = () => {
   };
 
   return (
-    <div
-      name="contact"
-      className="w-full min-h-screen h-full flex justify-center items-center p-4"
-    >
+    <CustomContainer name="contact">
       <form
         method="POST"
         className="flex flex-col max-w-[600px] w-full"
@@ -112,18 +111,12 @@ const Contact = () => {
             {errors.message.message}
           </div>
         )}
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className={`${
-            !isDark && "border-black"
-          } hover:text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center`}
-        >
-          {!isSubmitting ? "Let's Collaborate" : "Loading..."}
-        </button>
       </form>
+      <CustomButton type="outline">
+        {!isSubmitting ? "Let's Collaborate" : "Loading..."}
+      </CustomButton>
       <ToastContainer />
-    </div>
+    </CustomContainer>
   );
 };
 

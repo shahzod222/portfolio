@@ -1,25 +1,16 @@
 import React from "react";
-import RsLogo from "../assets/rslogo.jpeg";
-import DsrLogo from "../assets/dsr.jpeg";
-import { timelineElements } from "../data/data";
+import { experienceData } from "../data/experienceData";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { useAppContext } from "../utils/AppContext";
-
-const icons = {
-  rss: RsLogo,
-  dsr: DsrLogo,
-};
+import CustomContainer from "../utils/CustomContainer";
 
 const Experience = () => {
   const { isDark } = useAppContext();
   return (
-    <div
-      name="experience"
-      className="flex justify-center items-center w-full min-h-screen h-full pt-[80px] pb-4"
-    >
+    <CustomContainer name="experience">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 ">
           <div className="sm:text-right pb-8 pl-4">
@@ -31,7 +22,7 @@ const Experience = () => {
         </div>
 
         <VerticalTimeline lineColor={`${isDark ? "white" : "black"}`}>
-          {timelineElements.map((element) => {
+          {experienceData.map((element) => {
             return (
               <VerticalTimelineElement
                 key={element.id}
@@ -39,7 +30,7 @@ const Experience = () => {
                 dateClassName={`${isDark ? "text-white" : "text-black"}`}
                 icon={
                   <img
-                    src={icons[element.icon]}
+                    src={element.icon}
                     className="w-full h-full rounded-full "
                   />
                 }
@@ -65,7 +56,7 @@ const Experience = () => {
           })}
         </VerticalTimeline>
       </div>
-    </div>
+    </CustomContainer>
   );
 };
 
