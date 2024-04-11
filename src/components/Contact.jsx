@@ -40,21 +40,20 @@ const Contact = () => {
         parse_mode: "HTML",
       }),
     });
+    reset({ name: "", email: "", message: "" });
 
     toast.success("Message successfully sent!", {
       pauseOnHover: false,
       theme: "dark",
       autoClose: 3000,
     });
-
-    reset({ name: "", email: "", message: "" });
   };
 
   return (
     <CustomContainer name="contact">
       <form
         method="POST"
-        className="flex flex-col max-w-[600px] w-full"
+        className="flex flex-col justify-center max-w-[600px] w-full"
         onSubmit={handleSubmit(onSubmit)}
       >
         <div className="pb-8">
@@ -111,10 +110,11 @@ const Contact = () => {
             {errors.message.message}
           </div>
         )}
+        <CustomButton type="outline">
+          {!isSubmitting ? "Let's Collaborate" : "Loading..."}
+        </CustomButton>
       </form>
-      <CustomButton type="outline">
-        {!isSubmitting ? "Let's Collaborate" : "Loading..."}
-      </CustomButton>
+
       <ToastContainer />
     </CustomContainer>
   );

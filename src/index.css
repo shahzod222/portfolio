@@ -19,3 +19,7 @@
   background-size: cover !important;
   background-position: center !important;
 }
+
+.btn {
+  width: fit-content !important;
+}
