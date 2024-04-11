@@ -15,7 +15,7 @@ export const experienceData = [
     },
     date: {
       en: "December 2021 - October 2022",
-      ru: "Декабрь 2021 - октябрь 2022",
+      ru: "Декабрь 2021 - Октябрь 2022",
     },
     icon: RsLogo,
   },
@@ -32,7 +32,7 @@ export const experienceData = [
     },
     date: {
       en: "October 2023 - January 2024",
-      ru: "Октябрь 2023 - январь 2024",
+      ru: "Октябрь 2023 - Январь 2024",
     },
     icon: RsLogo,
   },
@@ -49,7 +49,7 @@ export const experienceData = [
     },
     date: {
       en: "October 2023 - February 2024",
-      ru: "Октябрь 2023 - февраль 2024",
+      ru: "Октябрь 2023 - Февраль 2024",
     },
     icon: DsrLogo,
   },
@@ -66,7 +66,7 @@ export const experienceData = [
     },
     date: {
       en: "January 2024 - present",
-      ru: "Январь 2024 - настоящее время",
+      ru: "Январь 2024 - Настоящее время",
     },
     icon: RsLogo,
   },

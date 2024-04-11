@@ -3,11 +3,11 @@ import { Switch } from "@headlessui/react";
 import { useAppContext } from "./AppContext";
 
 export default function Example() {
-  const [enabled, setEnabled] = useState(true);
+  const [enabled, setEnabled] = useState(localStorage.getItem("lang") === "ru");
   const { setLang } = useAppContext();
 
   const handleChange = () => {
-    const lang = enabled ? "ru" : "en";
+    const lang = enabled ? "en" : "ru";
     setLang(lang);
     localStorage.setItem("lang", lang);
     setEnabled(!enabled);
