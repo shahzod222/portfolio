@@ -16,6 +16,7 @@ export default function Example() {
       <Switch
         checked={enabled}
         onChange={handleChange}
+        style={{ borderColor: "rgb(209 213 219) " }}
         className="bg-[#0a192f] border-gray-300 relative flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white/75"
       >
         <span className="sr-only">Use setting</span>
