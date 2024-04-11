@@ -8,11 +8,15 @@ if (!localStorage.getItem("isDark")) {
   localStorage.setItem("isDark", "true");
 }
 
+if (!localStorage.getItem("lang")) {
+  localStorage.setItem("lang", "en");
+}
+
 export const AppProvider = ({ children }) => {
   const [isDark, setIsDark] = useState(
     localStorage.getItem("isDark") === "true"
   );
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState(localStorage.getItem("lang"));
   const translations = { en, ru };
   const t = (key) => translations[lang][key] || key;
 
