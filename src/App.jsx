@@ -5,16 +5,10 @@ import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
-import { useState } from "react";
-
-if (!localStorage.getItem("isDark")) {
-  localStorage.setItem("isDark", "true");
-}
+import { useAppContext } from "./utils/AppContext";
 
 function App() {
-  const [isDark, setIsDark] = useState(
-    localStorage.getItem("isDark") === "true"
-  );
+  const { isDark } = useAppContext();
 
   return (
     <div
@@ -23,13 +17,13 @@ function App() {
         color: `${isDark ? "rgb(209 213 219)" : "black"}`,
       }}
     >
-      <Navbar isDark={isDark} setIsDark={setIsDark} />
-      <Home isDark={isDark} />
-      <About isDark={isDark} />
-      <Experience isDark={isDark} />
-      <Skills isDark={isDark} />
-      <Work isDark={isDark} />
-      <Contact isDark={isDark} />
+      <Navbar />
+      <Home />
+      <About />
+      <Experience />
+      <Skills />
+      <Work />
+      <Contact />
     </div>
   );
 }

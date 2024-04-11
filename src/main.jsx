@@ -4,9 +4,12 @@ import App from "./App.jsx";
 import "react-vertical-timeline-component/style.min.css";
 import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
+import { AppProvider } from "./utils/AppContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <AppProvider>
+      <App />
+    </AppProvider>
   </React.StrictMode>
 );

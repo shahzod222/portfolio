@@ -1,7 +1,9 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
+import { useAppContext } from "../utils/AppContext";
 
-const Home = ({ isDark }) => {
+const Home = () => {
+  const { isDark } = useAppContext();
   return (
     <div name="home" className="w-full h-screen">
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">

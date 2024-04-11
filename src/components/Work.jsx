@@ -1,8 +1,10 @@
 import { projects } from "../data/data.js";
 import { FaCode } from "react-icons/fa";
 import { BsBrowserChrome } from "react-icons/bs";
+import { useAppContext } from "../utils/AppContext.jsx";
 
-const Work = ({ isDark }) => {
+const Work = () => {
+  const { isDark } = useAppContext();
   return (
     <div
       name="work"

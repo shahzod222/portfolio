@@ -6,13 +6,15 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import { useAppContext } from "../utils/AppContext";
 
 const icons = {
   rss: RsLogo,
   dsr: DsrLogo,
 };
 
-const Experience = ({ isDark }) => {
+const Experience = () => {
+  const { isDark } = useAppContext();
   return (
     <div
       name="experience"

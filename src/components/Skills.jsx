@@ -10,8 +10,10 @@ import Vite from "../assets/skills/vite.png";
 import Jest from "../assets/skills/jest.png";
 import Bootstrap from "../assets/skills/bootstrap.png";
 import Figma from "../assets/skills/figma.png";
+import { useAppContext } from "../utils/AppContext";
 
-const Skills = ({ isDark }) => {
+const Skills = () => {
+  const { isDark } = useAppContext();
   return (
     <div
       name="skills"

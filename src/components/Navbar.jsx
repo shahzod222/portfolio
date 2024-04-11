@@ -12,8 +12,10 @@ import { MdDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
 import { Link } from "react-scroll";
 import { useState } from "react";
+import { useAppContext } from "../utils/AppContext";
 
-const Navbar = ({ isDark, setIsDark }) => {
+const Navbar = () => {
+  const { isDark, setIsDark } = useAppContext();
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   const handleTheme = () => {

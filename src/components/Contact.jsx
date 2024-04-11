@@ -2,6 +2,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useAppContext } from "../utils/AppContext";
 
 const schema = z.object({
   name: z
@@ -15,7 +16,8 @@ const schema = z.object({
 const telegram_bot_id = "7123567208:AAEYTUcKL_LeDRhy4jok_gWgAHfekdeNnr4";
 const chat_id = 720043134;
 
-const Contact = ({ isDark }) => {
+const Contact = () => {
+  const { isDark } = useAppContext();
   const {
     register,
     handleSubmit,
