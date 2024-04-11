@@ -9,10 +9,10 @@ import CustomContainer from "../utils/CustomContainer";
 const schema = z.object({
   name: z
     .string()
-    .regex(/\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+/gm)
-    .min(1),
+    .regex(/\b([A-Za-zÀ-ÿ][-,a-z. ']+[ ]*)+/gim)
+    .min(2),
   email: z.string().email(),
-  message: z.string().min(10),
+  message: z.string().trim().min(10),
 });
 
 const telegram_bot_id = "7123567208:AAEYTUcKL_LeDRhy4jok_gWgAHfekdeNnr4";
