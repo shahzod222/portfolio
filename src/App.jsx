@@ -6,8 +6,9 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import { useAppContext } from "./utils/AppContext";
+import CustomParticles from "./utils/CustomParticles";
 
-function App() {
+const App = () => {
   const { isDark } = useAppContext();
 
   return (
@@ -17,6 +18,7 @@ function App() {
         color: `${isDark ? "rgb(209 213 219)" : "black"}`,
       }}
     >
+      <CustomParticles />
       <Navbar />
       <Home />
       <About />
@@ -26,6 +28,6 @@ function App() {
       <Contact />
     </div>
   );
-}
+};
 
 export default App;
