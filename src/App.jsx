@@ -19,7 +19,7 @@ const App = () => {
         style={{
           background: `${isDark ? "#0a192f" : "#ebebeb"}`,
           color: `${isDark ? "rgb(209 213 219)" : "black"}`,
-          opacity: `${loading ? "0" : "100"}`,
+          display: `${loading ? "none" : "block"}`,
         }}
       >
         <CustomParticles />
