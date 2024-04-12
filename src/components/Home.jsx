@@ -11,7 +11,7 @@ const Home = () => {
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-pink-600">{t("home.greeting")}</p>
         <h1
-          className={"text-4xl sm:text-7xl font-bold"}
+          className="text-4xl sm:text-7xl font-bold"
           style={{ color: `${isDark ? "#ccd6f6" : "#0d1c4c"}` }}
         >
           {t("home.name")}

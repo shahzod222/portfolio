@@ -5,6 +5,9 @@ import "react-vertical-timeline-component/style.min.css";
 import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
 import { AppProvider } from "./utils/AppContext.jsx";
+import { getInfo } from "./shared/getInfo.js";
+
+getInfo();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

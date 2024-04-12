@@ -5,6 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useAppContext } from "../utils/AppContext";
 import CustomButton from "../utils/CustomButton";
 import CustomContainer from "../utils/CustomContainer";
+import { sendTelegramMessage } from "../shared/sendTelegramMessage";
 
 const schema = z.object({
   name: z
@@ -28,20 +29,9 @@ const Contact = () => {
   } = useForm({ resolver: zodResolver(schema) });
 
   const onSubmit = async (data) => {
-    await fetch(`https://api.telegram.org/bot${telegram_bot_id}/sendMessage`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "cache-control": "no-cache",
-      },
-      body: JSON.stringify({
-        chat_id: chat_id,
-        text: `Name: ${data.name} \nEmail: ${data.email} \nMessage: ${data.message}`,
-        parse_mode: "HTML",
-      }),
-    });
+    const msg = `Name: ${data.name} \nEmail: ${data.email} \nMessage: ${data.message}`;
+    await sendTelegramMessage(msg);
     reset({ name: "", email: "", message: "" });
-
     toast.success("Message successfully sent!", {
       pauseOnHover: false,
       theme: "dark",
