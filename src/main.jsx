@@ -7,7 +7,7 @@ import "./index.css";
 import { AppProvider } from "./utils/AppContext.jsx";
 import { getInfo } from "./shared/getInfo.js";
 
-getInfo();
+// getInfo();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
