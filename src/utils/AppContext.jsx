@@ -17,11 +17,14 @@ export const AppProvider = ({ children }) => {
     localStorage.getItem("isDark") === "true"
   );
   const [lang, setLang] = useState(localStorage.getItem("lang"));
+  const [loading, setLoading] = useState(true);
   const translations = { en, ru };
   const t = (key) => translations[lang][key] || key;
 
   return (
-    <AppContext.Provider value={{ isDark, setIsDark, lang, setLang, t }}>
+    <AppContext.Provider
+      value={{ isDark, setIsDark, lang, setLang, t, loading, setLoading }}
+    >
       {children}
     </AppContext.Provider>
   );

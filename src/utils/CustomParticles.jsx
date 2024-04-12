@@ -5,9 +5,14 @@ import { useAppContext } from "./AppContext";
 
 const CustomParticles = () => {
   const [init, setInit] = useState(false);
-  const { isDark } = useAppContext();
+  const { isDark, setLoading } = useAppContext();
+
+  const particlesLoaded = (container) => {
+    setLoading(false);
+  };
 
   useEffect(() => {
+    setLoading(true);
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
     }).then(() => {
@@ -84,7 +89,13 @@ const CustomParticles = () => {
   };
 
   if (init) {
-    return <Particles id="tsparticles" options={options} />;
+    return (
+      <Particles
+        id="tsparticles"
+        particlesLoaded={particlesLoaded}
+        options={options}
+      />
+    );
   }
   return <></>;
 };
