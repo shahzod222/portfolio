@@ -10,6 +10,7 @@ import Tailwind from "../assets/skills/tailwind.png";
 import Bootstrap from "../assets/skills/bootstrap.png";
 import Jest from "../assets/skills/jest.png";
 import Figma from "../assets/skills/figma.png";
+import Next from "../assets/skills/next.png";
 
 export const skillsData = [
   {
@@ -37,40 +38,44 @@ export const skillsData = [
     name: "React.JS",
     img: React,
   },
-
   {
     id: 6,
+    name: "Next.JS",
+    img: Next,
+  },
+  {
+    id: 7,
     name: "Node.JS",
     img: Node,
   },
   {
-    id: 7,
+    id: 8,
     name: "GitHub",
     img: GitHub,
   },
   {
-    id: 8,
+    id: 9,
     name: "Vite",
     img: Vite,
   },
   {
-    id: 9,
+    id: 10,
     name: "Tailwind",
     img: Tailwind,
   },
   {
-    id: 10,
+    id: 11,
     name: "Bootstrap",
     img: Bootstrap,
   },
 
   {
-    id: 11,
+    id: 12,
     name: "Jest",
     img: Jest,
   },
   {
-    id: 12,
+    id: 13,
     name: "Figma",
     img: Figma,
   },
