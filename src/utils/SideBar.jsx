@@ -12,7 +12,6 @@ const SideBar = () => {
               className="w-[160px] h-[60px] px-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 cursor-pointer"
               style={{ background: el.color }}
             >
-              el.file && (
               <a
                 className="flex justify-between items-center w-full text-white"
                 href={el.url}
