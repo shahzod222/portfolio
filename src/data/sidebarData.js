@@ -1,6 +1,5 @@
 import { FaGithub, FaLinkedin, FaTelegram, FaInstagram } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Resume from "../assets/Resume.pdf";
 
 export const sidebarLinks = [
   {
@@ -34,9 +33,8 @@ export const sidebarLinks = [
   {
     id: 5,
     name: "Resume",
-    url: Resume,
+    url: "https://docs.google.com/document/d/1Lle3_8nCb2dGLkItBC2wk1VQet3UROjdSBUQm5loo0I/export?format=pdf",
     color: "#565f69",
-    file: "Resume",
     icon: BsFillPersonLinesFill,
   },
 ];
