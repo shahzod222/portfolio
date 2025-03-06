@@ -1,4 +1,4 @@
-import Logo from "../assets/logo1.png";
+import Logo from "../assets/logos/logo1.png";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
 import { useState } from "react";

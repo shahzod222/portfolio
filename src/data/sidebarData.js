@@ -30,11 +30,11 @@ export const sidebarLinks = [
     color: "#ee2a7b",
     icon: FaInstagram,
   },
-  {
-    id: 5,
-    name: "Resume",
-    url: "https://docs.google.com/document/d/1Lle3_8nCb2dGLkItBC2wk1VQet3UROjdSBUQm5loo0I/export?format=pdf",
-    color: "#565f69",
-    icon: BsFillPersonLinesFill,
-  },
+  // {
+  //   id: 5,
+  //   name: "Resume",
+  //   url: "https://docs.google.com/document/d/1Lle3_8nCb2dGLkItBC2wk1VQet3UROjdSBUQm5loo0I/export?format=pdf",
+  //   color: "#565f69",
+  //   icon: BsFillPersonLinesFill,
+  // },
 ];

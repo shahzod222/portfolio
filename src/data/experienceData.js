@@ -1,5 +1,6 @@
-import RsLogo from "../assets/rslogo.jpeg";
-import DsrLogo from "../assets/dsr.jpeg";
+import RsLogo from "../assets/logos/rslogo.jpeg";
+import DsrLogo from "../assets/logos/dsr.jpeg";
+import UpworkLogo from "../assets/logos/upwork.png";
 
 export const experienceData = [
   {
@@ -69,5 +70,22 @@ export const experienceData = [
       ru: "Январь 2024 - Июнь 2024",
     },
     icon: RsLogo,
+  },
+  {
+    id: 5,
+    title: {
+      en: "Shopify Developer",
+      ru: "Shopify Девелопер",
+    },
+    location: "Upwork",
+    description: {
+      en: "As a Shopify developer on Upwork, I have successfully completed 25+ projects, assisting clients worldwide, including the USA, UK, Australia, Romania, Belgium, France, and South Africa. My work has involved setting up and customizing Shopify themes, optimizing stores for better performance, implementing custom functionalities, and ensuring seamless user experiences.",
+      ru: "Как разработчик Shopify на Upwork, я успешно завершил более 25 проектов, помогая клиентам по всему миру, включая США, Великобританию, Австралию, Румынию, Бельгию, Францию ​​и Южную Африку. Моя работа включала настройку и настройку тем Shopify, оптимизацию магазинов для лучшей производительности, внедрение пользовательских функций и обеспечение бесперебойного пользовательского опыта.",
+    },
+    date: {
+      en: "August 2024 - Present",
+      ru: "Авгууст 2024 - До сих пор",
+    },
+    icon: UpworkLogo,
   },
 ];

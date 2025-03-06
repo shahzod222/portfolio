@@ -4,7 +4,7 @@ import { useAppContext } from "./AppContext";
 const WorkCard = ({ item }) => {
   const { isDark } = useAppContext();
   return (
-    <a href={item.live}>
+    <a href={item.live} target="_blank">
       <div
         className={`group container rounded-md
               flex justify-center text-center items-center mx-auto content-div duration-500`}
