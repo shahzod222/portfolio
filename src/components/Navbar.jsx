@@ -7,7 +7,6 @@ import NavbarLink from "../utils/NavbarLink";
 import { navbarLinks } from "../data/navbarData";
 import ThemeToggler from "../utils/ThemeToggler";
 import SideBar from "../utils/SideBar";
-import LanguageSwitcher from "../utils/LanguageSwitcher";
 
 const Navbar = () => {
   const { isDark, setIsDark } = useAppContext();
@@ -35,9 +34,6 @@ const Navbar = () => {
       <div className="flex justify-center items-center">
         <ul className="hidden lg:flex justify-center items-center">
           <li className="px-4">
-            <LanguageSwitcher />
-          </li>
-          <li className="px-4">
             <ThemeToggler onClick={handleTheme} size={30} />
           </li>
           {navbarLinks.map((el) => {
@@ -58,9 +54,6 @@ const Navbar = () => {
         }
         style={{ background: `${isDark ? "#0a192f" : "white"}` }}
       >
-        <li>
-          <LanguageSwitcher />
-        </li>
         <li>
           <ThemeToggler onClick={handleBurgerTheme} size={45} />
         </li>

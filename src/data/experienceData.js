@@ -1,91 +1,75 @@
-import RsLogo from "../assets/logos/rslogo.jpeg";
-import DsrLogo from "../assets/logos/dsr.jpeg";
-import UpworkLogo from "../assets/logos/upwork.png";
+import ExadelLogo from "../assets/logos/exadel.jpeg";
+import EPAMLogo from "../assets/logos/epam.jpeg";
+import BCGLogo from "../assets/logos/bcg.png";
+import VentionLogo from "../assets/logos/vention.png";
 
 export const experienceData = [
   {
     id: 1,
     title: {
-      en: "JavaScript Apprenticeship",
-      ru: "Учение по JavaScript",
+      en: "Associate Software Engineer",
+      ru: "Инженер-программист",
     },
-    location: "The Rolling Scopes School",
+    location: "Exadel",
     description: {
-      en: "Learned the basics of Frontend Development: HTML, CSS, JavaScript. Created numerous small single page applications. Got acquired with tools such as Webpack, npm, Scrum and more.",
-      ru: "Изучил основы фронтенд-разработки: HTML, CSS, JavaScript. Создал множество небольших одностраничных приложений. Познакомился с такими инструментами, как Webpack, npm, Scrum и другими.",
+      en: "Led React/TypeScript analytics dashboard development, boosting user engagement by 22%. Architected Node.js backend with SQL reporting tools, reducing processing time by 25%. Mentored 1 intern in React best practices, accelerating feature delivery by 15%. Collaborated on Angular legacy app redesign, improving usability score by 20% and reducing support tickets by 20%.",
+      ru: "Руководил разработкой аналитической панели на React/TypeScript, повысив вовлеченность пользователей на 22%. Создал бэкенд на Node.js с SQL-инструментами отчетности, сократив время обработки данных на 25%. Наставлял 1 стажера, ускорив выпуск функций на 15%. Участвовал в редизайне Angular-приложения, улучшив оценку удобства на 20% и сократив тикеты поддержки на 20%.",
     },
     date: {
-      en: "December 2021 - October 2022",
-      ru: "Декабрь 2021 - Октябрь 2022",
+      en: "June 2024 - March 2025",
+      ru: "Июнь 2024 - Март 2025",
     },
-    icon: RsLogo,
+    icon: ExadelLogo,
   },
   {
     id: 2,
     title: {
-      en: "React.JS Apprenticeship",
-      ru: "Учение по React.JS",
+      en: "Junior Software Engineer",
+      ru: "Младший инженер-программист",
     },
-    location: "The Rolling Scopes School",
+    location: "EPAM Systems",
     description: {
-      en: "Learned fundamental as well as advanced technologies of React.JS. Created many interactive applications utilizing Next.JS, Redux, TypeScript, GraphQL. Mastered skills of team-work by doing task with 2 teammates.",
-      ru: "Изучил как основные, так и продвинутые технологии React.JS. Создал множество интерактивных приложений с использованием Next.JS, Redux, TypeScript, GraphQL. Освоил навыки командной работы, выполняя задачи с двумя напарниками.",
+      en: "Developed React/TypeScript admin portal for E-commerce platform. Optimized Node.js/SQL APIs, enhancing query performance by 20% and saving $20K annually. Integrated Stripe payments in Angular platform, increasing checkout success by 18% ($300K revenue). Automated testing with Jest/Cypress, reducing bugs by 30%.",
+      ru: "Разработал административный портал на React/TypeScript для E-commerce. Оптимизировал Node.js/SQL API, улучшив производительность запросов на 20% и сэкономив $20K ежегодно. Интегрировал платежи Stripe в Angular-платформу, увеличив успешные оплаты на 18% ($300K дохода). Автоматизировал тестирование с Jest/Cypress, сократив ошибки на 30%.",
     },
     date: {
-      en: "October 2023 - January 2024",
-      ru: "Октябрь 2023 - Январь 2024",
+      en: "April 2023 - May 2024",
+      ru: "Апрель 2023 - Май 2024",
     },
-    icon: RsLogo,
+    icon: EPAMLogo,
   },
   {
     id: 3,
     title: {
-      en: "Frontend Bootcamp",
-      ru: "Фронтенд Буткэмп",
+      en: "Junior Software Engineer",
+      ru: "Младший инженер-программист",
     },
-    location: "DSR Corporation",
+    location: "Boston Consulting Group",
     description: {
-      en: "Received personalized mentorship and successfully completed all assignments by developing websites. Acquired and used technologies including React.JS, JavaScript, TypeScript, and other related tools.",
-      ru: "Получил персонализированное наставничество и успешно выполнил все задания, разрабатывая веб-сайты. Овладел и использовал технологии, включая React.JS, JavaScript, TypeScript и другие связанные инструменты.",
+      en: "Built React/Node.js app improving team productivity by 20%. Designed SQL reporting tools with Grafana/Elasticsearch. Solved performance issues using Angular, reducing load time by 50%. Contributed to TypeScript migration, cutting code maintenance by 25%.",
+      ru: "Разработал React/Node.js приложение, повысив продуктивность команды на 20%. Создал SQL-инструменты отчетности с Grafana/Elasticsearch. Решил проблемы производительности с помощью Angular, сократив время загрузки на 50%. Участвовал в миграции на TypeScript, уменьшив затраты на поддержку кода на 25%.",
     },
     date: {
-      en: "October 2023 - February 2024",
-      ru: "Октябрь 2023 - Февраль 2024",
+      en: "March 2022 - April 2023",
+      ru: "Март 2022 - Апрель 2023",
     },
-    icon: DsrLogo,
+    icon: BCGLogo,
   },
   {
     id: 4,
     title: {
-      en: "Frontend Mentor",
-      ru: "Наставник по Frontend",
+      en: "Software Engineering Intern",
+      ru: "Стажер-программист",
     },
-    location: "The Rolling Scopes School",
+    location: "Vention Teams",
     description: {
-      en: "As a mentor, I check my students' work, assist when they encounter obstacles and ensure their understanding and growth in front-end development through active mentorship and problem-solving.",
-      ru: "В качестве наставника я проверяю работы своих студентов, помогаю, когда они сталкиваются с препятствиями, и обеспечиваю их понимание и рост в разработке фронтенда через активное наставничество и решение проблем.",
+      en: "Developed 5 React components for key user features. Supported SQL data pipeline API development. Debugged React frontend issues, reducing UI bugs by 15%. Documented technical specs, cutting onboarding time by 20%.",
+      ru: "Разработал 5 React-компонентов для ключевых функций. Участвовал в разработке API для SQL-пайплайнов. Исправил ошибки в React-интерфейсе, сократив UI-баги на 15%. Документировал технические спецификации, уменьшив время адаптации новичков на 20%.",
     },
     date: {
-      en: "January 2024 - June 2024",
-      ru: "Январь 2024 - Июнь 2024",
+      en: "May 2021 - March 2022",
+      ru: "Май 2021 - Март 2022",
     },
-    icon: RsLogo,
-  },
-  {
-    id: 5,
-    title: {
-      en: "Shopify Developer",
-      ru: "Shopify Девелопер",
-    },
-    location: "Upwork",
-    description: {
-      en: "As a Shopify developer on Upwork, I have successfully completed 25+ projects, assisting clients worldwide, including the USA, UK, Australia, Romania, Belgium, France, and South Africa. My work has involved setting up and customizing Shopify themes, optimizing stores for better performance, implementing custom functionalities, and ensuring seamless user experiences.",
-      ru: "Как разработчик Shopify на Upwork, я успешно завершил более 25 проектов, помогая клиентам по всему миру, включая США, Великобританию, Австралию, Румынию, Бельгию, Францию ​​и Южную Африку. Моя работа включала настройку и настройку тем Shopify, оптимизацию магазинов для лучшей производительности, внедрение пользовательских функций и обеспечение бесперебойного пользовательского опыта.",
-    },
-    date: {
-      en: "August 2024 - Present",
-      ru: "Авгууст 2024 - До сих пор",
-    },
-    icon: UpworkLogo,
+    icon: VentionLogo,
   },
 ];
